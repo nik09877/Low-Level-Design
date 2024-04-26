@@ -1,0 +1,316 @@
+@startuml
+
+title __LOW-LEVEL-DESIGN-CODES's Class Diagram__\n
+
+  namespace designPatterns.creational.abstract_factory {
+    class designPatterns.creational.abstract_factory.LuxuryVehicle1 {
+    }
+  }
+  
+
+  namespace designPatterns.creational.abstract_factory {
+    class designPatterns.creational.abstract_factory.LuxuryVehicle2 {
+    }
+  }
+  
+
+  namespace designPatterns.creational.abstract_factory {
+    class designPatterns.creational.abstract_factory.LuxuryVehicleFactory {
+    }
+  }
+  
+
+  namespace designPatterns.creational.abstract_factory {
+    class designPatterns.creational.abstract_factory.Main {
+    }
+  }
+  
+
+  namespace designPatterns.creational.abstract_factory {
+    class designPatterns.creational.abstract_factory.OrdinaryVehicle1 {
+    }
+  }
+  
+
+  namespace designPatterns.creational.abstract_factory {
+    class designPatterns.creational.abstract_factory.OrdinaryVehicle2 {
+    }
+  }
+  
+
+  namespace designPatterns.creational.abstract_factory {
+    class designPatterns.creational.abstract_factory.OrdinaryVehicleFactory {
+    }
+  }
+  
+
+  namespace designPatterns.creational.abstract_factory {
+    interface designPatterns.creational.abstract_factory.Vehicle {
+    }
+  }
+  
+
+  namespace designPatterns.creational.abstract_factory {
+    interface designPatterns.creational.abstract_factory.VehicleFactory {
+    }
+  }
+  
+
+  namespace designPatterns.creational.abstract_factory {
+    class designPatterns.creational.abstract_factory.VehicleFactoryProducer {
+    }
+  }
+  
+
+  namespace designPatterns.creational.builder {
+    class designPatterns.creational.builder.Director {
+    }
+  }
+  
+
+  namespace designPatterns.creational.builder {
+    class designPatterns.creational.builder.EngineeringStudentBuilder {
+    }
+  }
+  
+
+  namespace designPatterns.creational.builder {
+    class designPatterns.creational.builder.MBAStudentBuilder {
+    }
+  }
+  
+
+  namespace designPatterns.creational.builder {
+    class designPatterns.creational.builder.Main {
+    }
+  }
+  
+
+  namespace designPatterns.creational.builder {
+    class designPatterns.creational.builder.Student {
+    }
+  }
+  
+
+  namespace designPatterns.creational.builder {
+    abstract class designPatterns.creational.builder.StudentBuilder {
+    }
+  }
+  
+
+  namespace designPatterns.creational.factory {
+    class designPatterns.creational.factory.Main {
+    }
+  }
+  
+
+  namespace designPatterns.creational.factory {
+    class designPatterns.creational.factory.Rectangle {
+    }
+  }
+  
+
+  namespace designPatterns.creational.factory {
+    interface designPatterns.creational.factory.Shape {
+    }
+  }
+  
+
+  namespace designPatterns.creational.factory {
+    class designPatterns.creational.factory.ShapeFactory {
+    }
+  }
+  
+
+  namespace designPatterns.creational.factory {
+    class designPatterns.creational.factory.Square {
+    }
+  }
+  
+
+  namespace designPatterns.solid.D {
+    class designPatterns.solid.D.Main {
+    }
+  }
+  
+
+  namespace designPatterns.solid.I {
+    interface designPatterns.solid.I.ChefInterface {
+    }
+  }
+  
+
+  namespace designPatterns.solid.I {
+    class designPatterns.solid.I.Main {
+    }
+  }
+  
+
+  namespace designPatterns.solid.I {
+    interface designPatterns.solid.I.WaiterInterface {
+    }
+  }
+  
+
+  namespace designPatterns.solid.I {
+    interface designPatterns.solid.I.WrongEmployeeInterface {
+    }
+  }
+  
+
+  namespace designPatterns.solid.L {
+    class designPatterns.solid.L.Main {
+    }
+  }
+  
+
+  namespace designPatterns.solid.L {
+    namespace correct {
+      class designPatterns.solid.L.correct.Bicycle {
+      }
+    }
+  }
+  
+
+  namespace designPatterns.solid.L {
+    namespace correct {
+      class designPatterns.solid.L.correct.Car {
+      }
+    }
+  }
+  
+
+  namespace designPatterns.solid.L {
+    namespace correct {
+      class designPatterns.solid.L.correct.EngineVehicle {
+      }
+    }
+  }
+  
+
+  namespace designPatterns.solid.L {
+    namespace correct {
+      class designPatterns.solid.L.correct.Vehicle {
+      }
+    }
+  }
+  
+
+  namespace designPatterns.solid.L {
+    namespace wrong {
+      class designPatterns.solid.L.wrong.Bicycle {
+      }
+    }
+  }
+  
+
+  namespace designPatterns.solid.L {
+    namespace wrong {
+      class designPatterns.solid.L.wrong.Car {
+      }
+    }
+  }
+  
+
+  namespace designPatterns.solid.L {
+    namespace wrong {
+      class designPatterns.solid.L.wrong.MotorCycle {
+      }
+    }
+  }
+  
+
+  namespace designPatterns.solid.L {
+    namespace wrong {
+      class designPatterns.solid.L.wrong.Vehicle {
+      }
+    }
+  }
+  
+
+  namespace designPatterns.solid.o {
+    class designPatterns.solid.o.DatabaseInvoiceDao {
+    }
+  }
+  
+
+  namespace designPatterns.solid.o {
+    class designPatterns.solid.o.FileInvoiceDao {
+    }
+  }
+  
+
+  namespace designPatterns.solid.o {
+    interface designPatterns.solid.o.InvoiceDao {
+    }
+  }
+  
+
+  namespace designPatterns.solid.o {
+    class designPatterns.solid.o.Main {
+    }
+  }
+  
+
+  namespace designPatterns.solid.s {
+    class designPatterns.solid.s.Invoice {
+    }
+  }
+  
+
+  namespace designPatterns.solid.s {
+    class designPatterns.solid.s.InvoiceDao {
+    }
+  }
+  
+
+  namespace designPatterns.solid.s {
+    class designPatterns.solid.s.InvoicePrinter {
+    }
+  }
+  
+
+  namespace designPatterns.solid.s {
+    class designPatterns.solid.s.Main {
+    }
+  }
+  
+
+  namespace designPatterns.solid.s {
+    class designPatterns.solid.s.Marker {
+    }
+  }
+  
+
+  designPatterns.creational.abstract_factory.LuxuryVehicle1 .up.|> designPatterns.creational.abstract_factory.Vehicle
+  designPatterns.creational.abstract_factory.LuxuryVehicle2 .up.|> designPatterns.creational.abstract_factory.Vehicle
+  designPatterns.creational.abstract_factory.LuxuryVehicleFactory .up.|> designPatterns.creational.abstract_factory.VehicleFactory
+  designPatterns.creational.abstract_factory.OrdinaryVehicle1 .up.|> designPatterns.creational.abstract_factory.Vehicle
+  designPatterns.creational.abstract_factory.OrdinaryVehicle2 .up.|> designPatterns.creational.abstract_factory.Vehicle
+  designPatterns.creational.abstract_factory.OrdinaryVehicleFactory .up.|> designPatterns.creational.abstract_factory.VehicleFactory
+  designPatterns.creational.builder.Director o-- designPatterns.creational.builder.StudentBuilder : studentBuilder
+  designPatterns.creational.builder.EngineeringStudentBuilder -up-|> designPatterns.creational.builder.StudentBuilder
+  designPatterns.creational.builder.MBAStudentBuilder -up-|> designPatterns.creational.builder.StudentBuilder
+  designPatterns.creational.factory.Rectangle .up.|> designPatterns.creational.factory.Shape
+  designPatterns.creational.factory.Square .up.|> designPatterns.creational.factory.Shape
+  designPatterns.solid.L.correct.Bicycle -up-|> designPatterns.solid.L.correct.Vehicle
+  designPatterns.solid.L.correct.Car -up-|> designPatterns.solid.L.correct.EngineVehicle
+  designPatterns.solid.L.correct.EngineVehicle -up-|> designPatterns.solid.L.correct.Vehicle
+  designPatterns.solid.L.wrong.Bicycle -up-|> designPatterns.solid.L.wrong.Vehicle
+  designPatterns.solid.L.wrong.Car -up-|> designPatterns.solid.L.wrong.Vehicle
+  designPatterns.solid.L.wrong.MotorCycle -up-|> designPatterns.solid.L.wrong.Vehicle
+  designPatterns.solid.o.DatabaseInvoiceDao .up.|> designPatterns.solid.o.InvoiceDao
+  designPatterns.solid.o.FileInvoiceDao .up.|> designPatterns.solid.o.InvoiceDao
+  designPatterns.solid.s.Invoice o-- designPatterns.solid.s.Marker : marker
+  designPatterns.solid.s.InvoiceDao o-- designPatterns.solid.s.Invoice : invoice
+  designPatterns.solid.s.InvoicePrinter o-- designPatterns.solid.s.Invoice : invoice
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
