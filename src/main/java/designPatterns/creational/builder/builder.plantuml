@@ -28,6 +28,7 @@ title __BUILDER's Class Diagram__\n
 
   namespace designPatterns.creational.builder {
     class designPatterns.creational.builder.Main {
+        {static} + main()
     }
   }
   

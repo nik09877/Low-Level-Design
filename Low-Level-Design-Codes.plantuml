@@ -282,6 +282,210 @@ title __LOW-LEVEL-DESIGN-CODES's Class Diagram__\n
   }
   
 
+  namespace problems.Apply_Coupon {
+    abstract class problems.Apply_Coupon.CouponDecorator {
+    }
+  }
+  
+
+  namespace problems.Apply_Coupon {
+    class problems.Apply_Coupon.Item1 {
+    }
+  }
+  
+
+  namespace problems.Apply_Coupon {
+    class problems.Apply_Coupon.Item2 {
+    }
+  }
+  
+
+  namespace problems.Apply_Coupon {
+    class problems.Apply_Coupon.Main {
+    }
+  }
+  
+
+  namespace problems.Apply_Coupon {
+    class problems.Apply_Coupon.PercentageCouponDecorator {
+    }
+  }
+  
+
+  namespace problems.Apply_Coupon {
+    abstract class problems.Apply_Coupon.Product {
+    }
+  }
+  
+
+  namespace problems.Apply_Coupon {
+    enum ProductType {
+    }
+  }
+  
+
+  namespace problems.Apply_Coupon {
+    class problems.Apply_Coupon.ShoppingCart {
+    }
+  }
+  
+
+  namespace problems.Apply_Coupon {
+    class problems.Apply_Coupon.TypeCouponDecorator {
+    }
+  }
+  
+
+  namespace problems.Null_Object_Pattern {
+    class problems.Null_Object_Pattern.Car {
+    }
+  }
+  
+
+  namespace problems.Null_Object_Pattern {
+    class problems.Null_Object_Pattern.Main {
+    }
+  }
+  
+
+  namespace problems.Null_Object_Pattern {
+    class problems.Null_Object_Pattern.NullObject {
+    }
+  }
+  
+
+  namespace problems.Null_Object_Pattern {
+    interface problems.Null_Object_Pattern.Vehicle {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.Address {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.CardPaymentMode {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.Cart {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.Inventory {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.Invoice {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.Main {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.NearestWarehouseSelectionStrategy {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.Order {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.OrderController {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    enum OrderStatus {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.Payment {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    interface problems.Order_Inventory_Management_Sysyem_Zepto.PaymentMode {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.Product {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.ProductCategory {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.ProductDeliverySystem {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.UPIPaymentMode {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.User {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.UserController {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.Warehouse {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.WarehouseController {
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    abstract class problems.Order_Inventory_Management_Sysyem_Zepto.WarehouseSelectionStrategy {
+    }
+  }
+  
+
   designPatterns.creational.abstract_factory.LuxuryVehicle1 .up.|> designPatterns.creational.abstract_factory.Vehicle
   designPatterns.creational.abstract_factory.LuxuryVehicle2 .up.|> designPatterns.creational.abstract_factory.Vehicle
   designPatterns.creational.abstract_factory.LuxuryVehicleFactory .up.|> designPatterns.creational.abstract_factory.VehicleFactory
@@ -304,6 +508,35 @@ title __LOW-LEVEL-DESIGN-CODES's Class Diagram__\n
   designPatterns.solid.s.Invoice o-- designPatterns.solid.s.Marker : marker
   designPatterns.solid.s.InvoiceDao o-- designPatterns.solid.s.Invoice : invoice
   designPatterns.solid.s.InvoicePrinter o-- designPatterns.solid.s.Invoice : invoice
+  problems.Apply_Coupon.CouponDecorator -up-|> problems.Apply_Coupon.Product
+  problems.Apply_Coupon.Item1 -up-|> problems.Apply_Coupon.Product
+  problems.Apply_Coupon.Item2 -up-|> problems.Apply_Coupon.Product
+  problems.Apply_Coupon.PercentageCouponDecorator -up-|> problems.Apply_Coupon.CouponDecorator
+  problems.Apply_Coupon.PercentageCouponDecorator o-- problems.Apply_Coupon.Product : product
+  problems.Apply_Coupon.Product o-- problems.Apply_Coupon.ProductType : type
+  problems.Apply_Coupon.TypeCouponDecorator -up-|> problems.Apply_Coupon.CouponDecorator
+  problems.Apply_Coupon.TypeCouponDecorator o-- problems.Apply_Coupon.Product : product
+  problems.Apply_Coupon.TypeCouponDecorator o-- problems.Apply_Coupon.ProductType : type
+  problems.Null_Object_Pattern.Car .up.|> problems.Null_Object_Pattern.Vehicle
+  problems.Null_Object_Pattern.NullObject .up.|> problems.Null_Object_Pattern.Vehicle
+  problems.Order_Inventory_Management_Sysyem_Zepto.CardPaymentMode .up.|> problems.Order_Inventory_Management_Sysyem_Zepto.PaymentMode
+  problems.Order_Inventory_Management_Sysyem_Zepto.NearestWarehouseSelectionStrategy -up-|> problems.Order_Inventory_Management_Sysyem_Zepto.WarehouseSelectionStrategy
+  problems.Order_Inventory_Management_Sysyem_Zepto.Order o-- problems.Order_Inventory_Management_Sysyem_Zepto.Address : deliveryAddress
+  problems.Order_Inventory_Management_Sysyem_Zepto.Order o-- problems.Order_Inventory_Management_Sysyem_Zepto.Invoice : invoice
+  problems.Order_Inventory_Management_Sysyem_Zepto.Order o-- problems.Order_Inventory_Management_Sysyem_Zepto.OrderStatus : orderStatus
+  problems.Order_Inventory_Management_Sysyem_Zepto.Order o-- problems.Order_Inventory_Management_Sysyem_Zepto.Payment : payment
+  problems.Order_Inventory_Management_Sysyem_Zepto.Order o-- problems.Order_Inventory_Management_Sysyem_Zepto.User : user
+  problems.Order_Inventory_Management_Sysyem_Zepto.Order o-- problems.Order_Inventory_Management_Sysyem_Zepto.Warehouse : warehouse
+  problems.Order_Inventory_Management_Sysyem_Zepto.Payment o-- problems.Order_Inventory_Management_Sysyem_Zepto.PaymentMode : paymentMode
+  problems.Order_Inventory_Management_Sysyem_Zepto.ProductDeliverySystem o-- problems.Order_Inventory_Management_Sysyem_Zepto.OrderController : orderController
+  problems.Order_Inventory_Management_Sysyem_Zepto.ProductDeliverySystem o-- problems.Order_Inventory_Management_Sysyem_Zepto.UserController : userController
+  problems.Order_Inventory_Management_Sysyem_Zepto.ProductDeliverySystem o-- problems.Order_Inventory_Management_Sysyem_Zepto.WarehouseController : warehouseController
+  problems.Order_Inventory_Management_Sysyem_Zepto.UPIPaymentMode .up.|> problems.Order_Inventory_Management_Sysyem_Zepto.PaymentMode
+  problems.Order_Inventory_Management_Sysyem_Zepto.User o-- problems.Order_Inventory_Management_Sysyem_Zepto.Address : address
+  problems.Order_Inventory_Management_Sysyem_Zepto.User o-- problems.Order_Inventory_Management_Sysyem_Zepto.Cart : userCartDetails
+  problems.Order_Inventory_Management_Sysyem_Zepto.Warehouse o-- problems.Order_Inventory_Management_Sysyem_Zepto.Address : address
+  problems.Order_Inventory_Management_Sysyem_Zepto.Warehouse o-- problems.Order_Inventory_Management_Sysyem_Zepto.Inventory : inventory
+  problems.Order_Inventory_Management_Sysyem_Zepto.WarehouseController o-- problems.Order_Inventory_Management_Sysyem_Zepto.WarehouseSelectionStrategy : warehouseSelectionStrategy
 
 
 right footer

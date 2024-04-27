@@ -1,0 +1,243 @@
+@startuml
+
+title __ORDER_INVENTORY_MANAGEMENT_SYSYEM_ZEPTO's Class Diagram__\n
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.Address {
+        ~ city : String
+        ~ pinCode : int
+        ~ state : String
+        + getCity()
+        + getPinCode()
+        + getState()
+        + setCity()
+        + setPinCode()
+        + setState()
+        ~ Address()
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.CardPaymentMode {
+        + makePayment()
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.Cart {
+        ~ productCategoryIdVsCountMap : Map<Integer, Integer>
+        + addItemInCart()
+        + emptyCart()
+        + getCartItems()
+        + removeItemFromCart()
+        ~ Cart()
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.Inventory {
+        ~ productCategoryList : List<ProductCategory>
+        + addCategory()
+        + addProduct()
+        + removeItems()
+        ~ Inventory()
+        - getProductCategoryFromID()
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.Invoice {
+        ~ totalFinalPrice : int
+        ~ totalItemPrice : int
+        ~ totalTax : int
+        + generateInvoice()
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.Main {
+        {static} + main()
+        - addWarehouseAndItsInventory()
+        - createUser()
+        - runDeliveryFlow()
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.NearestWarehouseSelectionStrategy {
+        + selectWarehouse()
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.Order {
+        ~ productCategoryAndCountMap : Map<Integer, Integer>
+        + checkout()
+        + generateOrderInvoice()
+        + makePayment()
+        ~ Order()
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.OrderController {
+        ~ orderList : List<Order>
+        ~ userIDVsOrders : Map<Integer, List<Order>>
+        + createNewOrder()
+        + getOrderByCustomerId()
+        + getOrderByOrderId()
+        + removeOrder()
+        ~ OrderController()
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    enum OrderStatus {
+      CANCELLED
+      DELIVERED
+      RETURNED
+      UNDELIVERED
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.Payment {
+        + makePayment()
+        ~ Payment()
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    interface problems.Order_Inventory_Management_Sysyem_Zepto.PaymentMode {
+        {abstract} + makePayment()
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.Product {
+        ~ productId : int
+        ~ productName : String
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.ProductCategory {
+        ~ categoryId : int
+        ~ categoryName : String
+        ~ price : double
+        ~ products : List<Product>
+        + addProduct()
+        + removeProduct()
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.ProductDeliverySystem {
+        + addProductToCart()
+        + checkout()
+        + getInventory()
+        + getUser()
+        + getWarehouse()
+        + placeOrder()
+        ~ ProductDeliverySystem()
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.UPIPaymentMode {
+        + makePayment()
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.User {
+        ~ orderIds : List<Integer>
+        ~ userId : int
+        ~ userName : String
+        + User()
+        + getUserCart()
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.UserController {
+        ~ userList : List<User>
+        + addUser()
+        + getUser()
+        + removeUser()
+        ~ UserController()
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.Warehouse {
+        + addItemToInventory()
+        + removeItemFromInventory()
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    class problems.Order_Inventory_Management_Sysyem_Zepto.WarehouseController {
+        ~ warehouseList : List<Warehouse>
+        + addNewWarehouse()
+        + removeWarehouse()
+        + selectWarehouse()
+        ~ WarehouseController()
+    }
+  }
+  
+
+  namespace problems.Order_Inventory_Management_Sysyem_Zepto {
+    abstract class problems.Order_Inventory_Management_Sysyem_Zepto.WarehouseSelectionStrategy {
+        {abstract} + selectWarehouse()
+    }
+  }
+  
+
+  problems.Order_Inventory_Management_Sysyem_Zepto.CardPaymentMode .up.|> problems.Order_Inventory_Management_Sysyem_Zepto.PaymentMode
+  problems.Order_Inventory_Management_Sysyem_Zepto.NearestWarehouseSelectionStrategy -up-|> problems.Order_Inventory_Management_Sysyem_Zepto.WarehouseSelectionStrategy
+  problems.Order_Inventory_Management_Sysyem_Zepto.Order o-- problems.Order_Inventory_Management_Sysyem_Zepto.Address : deliveryAddress
+  problems.Order_Inventory_Management_Sysyem_Zepto.Order o-- problems.Order_Inventory_Management_Sysyem_Zepto.Invoice : invoice
+  problems.Order_Inventory_Management_Sysyem_Zepto.Order o-- problems.Order_Inventory_Management_Sysyem_Zepto.OrderStatus : orderStatus
+  problems.Order_Inventory_Management_Sysyem_Zepto.Order o-- problems.Order_Inventory_Management_Sysyem_Zepto.Payment : payment
+  problems.Order_Inventory_Management_Sysyem_Zepto.Order o-- problems.Order_Inventory_Management_Sysyem_Zepto.User : user
+  problems.Order_Inventory_Management_Sysyem_Zepto.Order o-- problems.Order_Inventory_Management_Sysyem_Zepto.Warehouse : warehouse
+  problems.Order_Inventory_Management_Sysyem_Zepto.Payment o-- problems.Order_Inventory_Management_Sysyem_Zepto.PaymentMode : paymentMode
+  problems.Order_Inventory_Management_Sysyem_Zepto.ProductDeliverySystem o-- problems.Order_Inventory_Management_Sysyem_Zepto.OrderController : orderController
+  problems.Order_Inventory_Management_Sysyem_Zepto.ProductDeliverySystem o-- problems.Order_Inventory_Management_Sysyem_Zepto.UserController : userController
+  problems.Order_Inventory_Management_Sysyem_Zepto.ProductDeliverySystem o-- problems.Order_Inventory_Management_Sysyem_Zepto.WarehouseController : warehouseController
+  problems.Order_Inventory_Management_Sysyem_Zepto.UPIPaymentMode .up.|> problems.Order_Inventory_Management_Sysyem_Zepto.PaymentMode
+  problems.Order_Inventory_Management_Sysyem_Zepto.User o-- problems.Order_Inventory_Management_Sysyem_Zepto.Address : address
+  problems.Order_Inventory_Management_Sysyem_Zepto.User o-- problems.Order_Inventory_Management_Sysyem_Zepto.Cart : userCartDetails
+  problems.Order_Inventory_Management_Sysyem_Zepto.Warehouse o-- problems.Order_Inventory_Management_Sysyem_Zepto.Address : address
+  problems.Order_Inventory_Management_Sysyem_Zepto.Warehouse o-- problems.Order_Inventory_Management_Sysyem_Zepto.Inventory : inventory
+  problems.Order_Inventory_Management_Sysyem_Zepto.WarehouseController o-- problems.Order_Inventory_Management_Sysyem_Zepto.WarehouseSelectionStrategy : warehouseSelectionStrategy
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
