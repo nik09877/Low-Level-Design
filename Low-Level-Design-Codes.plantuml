@@ -486,6 +486,42 @@ title __LOW-LEVEL-DESIGN-CODES's Class Diagram__\n
   }
   
 
+  namespace problems.Undo_Redo {
+    class problems.Undo_Redo.AirConditioner {
+    }
+  }
+  
+
+  namespace problems.Undo_Redo {
+    interface problems.Undo_Redo.ICommand {
+    }
+  }
+  
+
+  namespace problems.Undo_Redo {
+    class problems.Undo_Redo.Main {
+    }
+  }
+  
+
+  namespace problems.Undo_Redo {
+    class problems.Undo_Redo.RemoteController {
+    }
+  }
+  
+
+  namespace problems.Undo_Redo {
+    class problems.Undo_Redo.TurnOffACCommand {
+    }
+  }
+  
+
+  namespace problems.Undo_Redo {
+    class problems.Undo_Redo.TurnOnACCommand {
+    }
+  }
+  
+
   designPatterns.creational.abstract_factory.LuxuryVehicle1 .up.|> designPatterns.creational.abstract_factory.Vehicle
   designPatterns.creational.abstract_factory.LuxuryVehicle2 .up.|> designPatterns.creational.abstract_factory.Vehicle
   designPatterns.creational.abstract_factory.LuxuryVehicleFactory .up.|> designPatterns.creational.abstract_factory.VehicleFactory
@@ -537,6 +573,11 @@ title __LOW-LEVEL-DESIGN-CODES's Class Diagram__\n
   problems.Order_Inventory_Management_Sysyem_Zepto.Warehouse o-- problems.Order_Inventory_Management_Sysyem_Zepto.Address : address
   problems.Order_Inventory_Management_Sysyem_Zepto.Warehouse o-- problems.Order_Inventory_Management_Sysyem_Zepto.Inventory : inventory
   problems.Order_Inventory_Management_Sysyem_Zepto.WarehouseController o-- problems.Order_Inventory_Management_Sysyem_Zepto.WarehouseSelectionStrategy : warehouseSelectionStrategy
+  problems.Undo_Redo.RemoteController o-- problems.Undo_Redo.ICommand : command
+  problems.Undo_Redo.TurnOffACCommand .up.|> problems.Undo_Redo.ICommand
+  problems.Undo_Redo.TurnOffACCommand o-- problems.Undo_Redo.AirConditioner : ac
+  problems.Undo_Redo.TurnOnACCommand .up.|> problems.Undo_Redo.ICommand
+  problems.Undo_Redo.TurnOnACCommand o-- problems.Undo_Redo.AirConditioner : ac
 
 
 right footer
