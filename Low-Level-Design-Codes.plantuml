@@ -336,6 +336,30 @@ title __LOW-LEVEL-DESIGN-CODES's Class Diagram__\n
   }
   
 
+  namespace problems.Concurrency_Control_in_Distributed_Systems {
+    class problems.Concurrency_Control_in_Distributed_Systems.Main {
+    }
+  }
+  
+
+  namespace problems.HashMap {
+    class problems.HashMap.CustomHashMap {
+    }
+  }
+  
+
+  namespace problems.HashMap {
+    class problems.HashMap.Main {
+    }
+  }
+  
+
+  namespace problems.MVC {
+    class problems.MVC.Main {
+    }
+  }
+  
+
   namespace problems.Null_Object_Pattern {
     class problems.Null_Object_Pattern.Car {
     }
@@ -356,6 +380,36 @@ title __LOW-LEVEL-DESIGN-CODES's Class Diagram__\n
 
   namespace problems.Null_Object_Pattern {
     interface problems.Null_Object_Pattern.Vehicle {
+    }
+  }
+  
+
+  namespace problems.Online_Auction_System {
+    class problems.Online_Auction_System.AuctionMediator {
+    }
+  }
+  
+
+  namespace problems.Online_Auction_System {
+    class problems.Online_Auction_System.Bidder {
+    }
+  }
+  
+
+  namespace problems.Online_Auction_System {
+    interface problems.Online_Auction_System.Colleague {
+    }
+  }
+  
+
+  namespace problems.Online_Auction_System {
+    class problems.Online_Auction_System.Main {
+    }
+  }
+  
+
+  namespace problems.Online_Auction_System {
+    interface problems.Online_Auction_System.Mediator {
     }
   }
   
@@ -555,6 +609,9 @@ title __LOW-LEVEL-DESIGN-CODES's Class Diagram__\n
   problems.Apply_Coupon.TypeCouponDecorator o-- problems.Apply_Coupon.ProductType : type
   problems.Null_Object_Pattern.Car .up.|> problems.Null_Object_Pattern.Vehicle
   problems.Null_Object_Pattern.NullObject .up.|> problems.Null_Object_Pattern.Vehicle
+  problems.Online_Auction_System.AuctionMediator .up.|> problems.Online_Auction_System.Mediator
+  problems.Online_Auction_System.Bidder .up.|> problems.Online_Auction_System.Colleague
+  problems.Online_Auction_System.Bidder o-- problems.Online_Auction_System.Mediator : auctionMediator
   problems.Order_Inventory_Management_Sysyem_Zepto.CardPaymentMode .up.|> problems.Order_Inventory_Management_Sysyem_Zepto.PaymentMode
   problems.Order_Inventory_Management_Sysyem_Zepto.NearestWarehouseSelectionStrategy -up-|> problems.Order_Inventory_Management_Sysyem_Zepto.WarehouseSelectionStrategy
   problems.Order_Inventory_Management_Sysyem_Zepto.Order o-- problems.Order_Inventory_Management_Sysyem_Zepto.Address : deliveryAddress
